@@ -30,7 +30,7 @@ body {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(-120deg,black, #303333, black, #303333,black);
+  background: linear-gradient(-120deg, black, #303333, black, #303333, black);
   animation: animate 3s linear infinite;
   /* animation-direction:alternate-reverse; */
   pointer-events: none;
@@ -38,77 +38,88 @@ body {
 }
 
 /* Header */
-header{
-    display : flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    color: white;
-    font-size: 1.5rem;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .copyright {
-    color: white;
-    font-size: 1rem;
-    position: absolute;
-    bottom: 0vh;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    /* height: 1vh; */
-    border-top: 2px dashed #202020;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 1vh; */
+  border-top: 2px dashed #202020;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
 }
 
-
-a{
-    color: white;
-    text-decoration: none;
-    padding: 0px 10px;
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px;
 }
 
 .social-link i {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
-.fab:hover {
-    scale: 1.2;
-    
+/* different color on hover */
+.fa-github:hover {
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
-    
 
+.fa-linkedin-in:hover {
+  background-color: #0077b5;
+  /* border-radius: 100%; */
+  padding: 4px 4px 0px 4px;
+  border-radius: 10px;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.fa-whatsapp:hover {
+  background-color: #25d366;
+  /* border-radius: 100%; */
+  padding: 2px 4px 2px 4px;
+  border-radius: 9px;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.fa-instagram:hover {
+  color: white !important; /* Better visibility against gradient */
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 
 @keyframes animate {
   0% {
-    transform: translateY(-100%) ;
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateY(100%) ;
+    transform: translateY(100%);
   }
 }
 
@@ -119,7 +130,6 @@ span {
   background: #111;
   border: none;
   transition: border 0.3s ease-in-out;
-
 }
 
 span:hover {
