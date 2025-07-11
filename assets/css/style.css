@@ -52,11 +52,32 @@ header{
     font-size: 1.5rem;
 }
 
+.copyright {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 1vh; */
+    border-top: 2px dashed #202020;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+
+}
+
 
 a{
     color: white;
     text-decoration: none;
     padding: 0px 10px;
+}
+
+.social-link i {
+    font-size: 2.5rem;
 }
 
 .fab:hover {
