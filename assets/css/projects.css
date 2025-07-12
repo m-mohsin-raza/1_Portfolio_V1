@@ -211,6 +211,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 100px;
     width: 90vw;         /* Set card width to 90% of viewport */
 
   }
@@ -219,7 +220,7 @@
     padding: 18px;
     max-width: 400px;    /* Limit max width for better appearance */
     min-width: 240px;    /* Prevent cards from getting too narrow */
-    margin: 10px 0px auto;   /* Center cards horizontally */
+    margin: 20px 0px auto;   /* Center cards horizontally */
   }
 
   .project-header {
