@@ -1,4 +1,3 @@
-
 /* ===== Projects ===== */
 .projects {
   display: flex;
@@ -207,7 +206,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .projects {
     flex-direction: column;
     align-items: center;
@@ -216,8 +215,10 @@
 
   .project-card {
     padding: 18px;
-    /* margin: 10px; */
-    max-width: 100vw;
+    width: 90vw;         /* Set card width to 90% of viewport */
+    max-width: 400px;    /* Limit max width for better appearance */
+    min-width: 240px;    /* Prevent cards from getting too narrow */
+    margin: 10px auto;   /* Center cards horizontally */
   }
 
   .project-header {
