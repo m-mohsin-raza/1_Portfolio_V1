@@ -1,0 +1,237 @@
+
+/* ===== Projects ===== */
+.projects {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  width: 100%;
+  /* padding: 20px; */
+  margin-top: 20px;
+  height: 80%;
+  z-index: 1;
+}
+/* Project Cards CSS */
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  margin: 20px 0;
+  width: auto;
+  max-width: 360px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(131, 58, 180, 0.3);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.project-title {
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+  background: linear-gradient(to right, #833ab4, #fd1d1d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-type {
+  background: rgba(131, 58, 180, 0.3);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-label i {
+  color: #fcb045;
+}
+
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.project-meta {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8rem;
+}
+
+.meta-item i {
+  color: #833ab4;
+  font-size: 0.9rem;
+}
+
+.achievements {
+  margin: 14px 0;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.achievements-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.achievements-list li {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.8rem;
+  padding: 6px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.achievements-list i {
+  color: #25d366;
+  font-size: 0.8rem;
+  margin-top: 3px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.view-btn,
+.code-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.view-btn {
+  background: rgba(253, 29, 29, 0.2);
+  color: white;
+  border: 1px solid rgba(253, 29, 29, 0.4);
+}
+
+.code-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.code-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.view-btn:hover {
+  background: rgba(253, 29, 29, 0.3);
+  transform: translateY(-2px);
+}
+
+.code-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.view-btn i,
+.code-btn i {
+  margin-right: 8px;
+  font-size: 0.85rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .project-card {
+    padding: 18px;
+    /* margin: 10px; */
+    max-width: 100vw;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .project-details {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card-actions {
+    justify-content: center;
+  }
+}

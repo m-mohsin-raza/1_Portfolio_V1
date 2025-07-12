@@ -13,11 +13,13 @@ body {
   min-height: 100vh;
   width: 100vw;
   font-family: "Karla", sans-serif;
+  position: relative;
 }
 
 /* ===== BACKGROUND STYLES ===== */
 .background {
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -251,156 +253,6 @@ a {
   padding: 0px 10px;
 }
 
-/* ===== Projects ===== */
-/* Compact Project Card Styles */
-.project-card {
-  background-color: transparent;
-  background-image: linear-gradient(
-    120deg,
-    rgba(94, 89, 89, 0.2),
-    rgba(31, 29, 29, 0.2)
-  );
-  backdrop-filter: blur(5px);
-  background-size: 30px 30px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 16px;
-  margin: 12px 0;
-  width: 100%;
-  max-width: 320px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.project-title {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
-  background: linear-gradient(to right, #833ab4, #fd1d1d);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.project-type {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 0.7rem;
-}
-
-.project-description {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.85rem;
-  line-height: 1.4;
-  margin-bottom: 12px;
-}
-
-.project-details {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.detail-label {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.75rem;
-  margin-bottom: 4px;
-}
-
-.tools-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.tool {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 0.7rem;
-}
-
-.project-meta {
-  display: flex;
-  gap: 15px;
-}
-
-.meta-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.date {
-  color: white;
-  font-size: 0.75rem;
-}
-
-.achievements {
-  margin: 10px 0;
-}
-
-.achievements-list {
-  list-style: none;
-  padding-left: 5px;
-  margin-top: 5px;
-}
-
-.achievements-list li {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.75rem;
-  padding: 2px 0;
-}
-
-.view-live-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.8);
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 0.75rem;
-  text-decoration: none;
-  margin-top: 8px;
-}
-
-.view-live-btn i {
-  margin-right: 5px;
-  font-size: 0.7rem;
-}
-
-
-
-/* Responsive Project */
-@media (max-width: 768px) {
-  .project-card {
-    padding: 14px;
-    max-width: 280px;
-  }
-
-  .project-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .project-details {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
 
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 900px) {
@@ -413,6 +265,8 @@ a {
     padding: 0px 5px 5px 5px;
     text-wrap: balance;
   }
+
+
   .content {
     flex-direction: column-reverse;
     justify-content: center;
@@ -421,6 +275,7 @@ a {
     height: auto;
     gap: 30px;
   }
+
 
   #intro {
     padding-right: 0;
