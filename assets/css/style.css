@@ -264,7 +264,7 @@ a {
   color: white;
 }
 
-.languages_tools{
+.languages_tools {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -274,15 +274,59 @@ a {
   gap: 20px;
 }
 
-.tool-icon{
+.tool-icon {
   display: flex;
   align-items: center;
   /* width: 200px; */
   height: 180px;
   margin-top: 10px;
-
+}
+.lang {
+  transition-duration: 0ms;
+  transform: translate3d(0px, 0px, 0px);
+  transition-delay: 0ms;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-delay: 0s;
+  position: relative;
+  width: 100%;
+  height: 105px;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: ease;
+  box-sizing: content-box;
+  cursor: none;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(229, 231, 235);
 }
 
+.lang img {
+  width: 192px;
+  margin-right: 50px;
+  margin-right: 50px;
+  flex-shrink: 0;
+  height: 105px;
+  position: relative;
+  transition-property: transform;
+  display: block;
+  cursor: none;
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(229, 231, 235);
+  width: 105px;
+  height: 105px;
+  height: 105px;
+  cursor: none;
+  object-fit: contain;
+  max-width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(229, 231, 235);
+}
 
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 900px) {
@@ -296,7 +340,6 @@ a {
     text-wrap: balance;
   }
 
-
   .content {
     flex-direction: column-reverse;
     justify-content: center;
@@ -305,7 +348,6 @@ a {
     height: auto;
     gap: 30px;
   }
-
 
   #intro {
     padding-right: 0;
